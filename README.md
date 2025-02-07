@@ -5,16 +5,20 @@ Welcome to the MyWeather App Tech Test.
 ## Key Changes (Documentation)
 
 1. **Minimal `WeatherController`**:
-   - The controller now only handles HTTP requests and responses.
    - Business logic (daylight comparison and rain check) is moved to the `WeatherService`.
 
 2. **Daylight Comparison**:
    - Compares daylight hours (sunset - sunrise) between two cities.
    - Returns the city with the longest day or indicates if both have the same daylight hours.
+   - **Endpoint**: `/compare/daylight/{city1}/{city2}`
+   - **Example**: `/compare/daylight/London/India`
+   - **Response**: `"The longest day is in India with 11 hours of daylight."`
 
 3. **Rain Check**:
    - Checks if it is currently raining in either of the two cities.
    - Returns which city is raining or if it is raining in both or neither.
+   - **Example**: `/check/rain/London/Paris`
+   - **Response**: `"It is currently raining in London."`
 
 4. **Added Getters and Setters to `CityInfo`**:
    - Ensures proper encapsulation and supports serialization/deserialization.
