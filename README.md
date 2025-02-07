@@ -2,6 +2,29 @@
 
 Welcome to the MyWeather App Tech Test.
 
+## Key Changes (Documentation)
+
+1. **Minimal `WeatherController`**:
+   - The controller now only handles HTTP requests and responses.
+   - Business logic (daylight comparison and rain check) is moved to the `WeatherService`.
+
+2. **Daylight Comparison**:
+   - Compares daylight hours (sunset - sunrise) between two cities.
+   - Returns the city with the longest day or indicates if both have the same daylight hours.
+
+3. **Rain Check**:
+   - Checks if it is currently raining in either of the two cities.
+   - Returns which city is raining or if it is raining in both or neither.
+
+4. **Added Getters and Setters to `CityInfo`**:
+   - Ensures proper encapsulation and supports serialization/deserialization.
+
+5. **Unit Tests**:
+   - Added 7 unit tests for `WeatherService` to verify daylight comparison and rain check logic.
+   - All tests passed successfully.
+
+---
+
 ## The Challenge
 
 You are tasked with implementing two new features in the app:

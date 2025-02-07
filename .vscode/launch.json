@@ -9,6 +9,16 @@
             "name": "Launch ApiApp",
             "request": "launch",
             "mainClass": "com.weatherapp.myweatherapp.MyweatherappApplication"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MyweatherappApplication<myweatherapp>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.weatherapp.myweatherapp.MyweatherappApplication",
+            "projectName": "myweatherapp",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
