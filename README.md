@@ -17,6 +17,7 @@ Welcome to the MyWeather App Tech Test.
 3. **Rain Check**:
    - Checks if it is currently raining in either of the two cities.
    - Returns which city is raining or if it is raining in both or neither.
+   - **Endpoint**: `/check/rain/{city1}/{city2}`
    - **Example**: `/check/rain/London/Paris`
    - **Response**: `"It is currently raining in London."`
 
